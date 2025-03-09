@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
 
         
 
-        return NextResponse.json({ message: "Komut başarıyla gönderildi", response }, { status: 200 });
+        return NextResponse.json({ message: "Command sended succesfully", response }, { status: 200 });
     } catch (error: unknown) {
         return NextResponse.json({ message: error }, { status: 500 });
     }
